@@ -82,10 +82,10 @@ async def start_command(event):
         f"ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ **{bot_name}** ʙᴏᴛ!\n\n"
         "ᴋᴇʏ ғᴇᴀᴛᴜʀᴇs :\n• /banall \n• /unbanall \n• /leave \n• /restart \n\n ᴀᴅᴍɪɴ-ᴏɴʟʏ ᴄᴏᴍᴍᴀɴᴅs; ᴜsᴇ ᴄᴀᴜᴛɪᴏᴜsʟʏ \n",
         buttons=[
-            [Button.url("ᴄʜᴀɴɴᴇʟ", url="https://t.me/AllPremiumBIN"),
-             Button.url("ɢʀᴏᴜᴘ", url="https://t.me/alonegroup121")],
+            [Button.url("ᴄʜᴀɴɴᴇʟ", url="https://t.me/lumiaofficial"),
+             Button.url("ɢʀᴏᴜᴘ", url="https://t.me/Friend_Chat_International")],
         ],
-        file='https://telegra.ph/file/abc96d1ec9d101df8f988.jpg'
+        file='https://files.catbox.moe/2k3790.jpg'
     )
     
     await event.client.send_reaction(event.chat_id, event.message.id, [random_emoji])
@@ -130,7 +130,7 @@ async def kickall(event):
             except Exception as e:
                 print(str(e))
                 await asyncio.sleep(0.1)
-        await Sagar.edit(f"**Users Kicked Successfully ! \n\n Kicked:** `{kimk}` \n **Total:** `{all}`")
+        await Sagar.edit(f"")
 
 
 @Dil.on(events.NewMessage(pattern="^/banall"))
@@ -161,7 +161,7 @@ async def banall(event):
             except Exception as e:
                 print(str(e))
                 await asyncio.sleep(0.1)
-        await Sagar.edit(f"**Users Banned Successfully ! \n\n Banned Users:** `{bann}` \n **Total Users:** `{all}`")
+        await Sagar.edit(f"")
 
 
 @Dil.on(events.NewMessage(pattern="^/unbanall"))
