@@ -15,7 +15,7 @@ class Var:
     API_ID = int(os.getenv("API_ID", "18474511"))
     API_HASH = os.getenv("API_HASH", "a2b87c4925f27ec68b4f9bf2c0854311")
     BOT_TOKEN = os.getenv("7301244355:AAEe-96maAKDafRT3z4TKgAanVTCrjIBI9o")
-    sudo = os.getenv("SUDO", "7639021876")
+    sudo = os.getenv("SUDO", "6999372290")
     SUDO = []
     if sudo:
         SUDO = make_int(sudo)
